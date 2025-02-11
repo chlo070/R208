@@ -1,8 +1,6 @@
 import sys
 from pathlib import Path
 
-
-
 print("bonjour")
 if __name__ == '__main__':
 
