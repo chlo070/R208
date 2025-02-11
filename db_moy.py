@@ -3,6 +3,7 @@ from pathlib import Path
 
 if __name__ == '__main__':
 
+
 #vérification du nombre d'arguments
     if len(sys.argv) < 5 :
         print("Erreur : Nombre d'arguments insuffisant")

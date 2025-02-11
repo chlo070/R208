@@ -4,6 +4,7 @@ from pathlib import Path
 print("bonjour")
 if __name__ == '__main__':
 
+
     print(sys.argv[0])
 
     if len(sys.argv) < 2 :
