@@ -3,6 +3,7 @@ from pathlib import Path
 
 # Code du programme principal
 
+
 """
 PARTIE 1
 1. Vérifiez que 2 arguments sont fournis (après le nom du script). Sinon, message d’erreur du type : 
