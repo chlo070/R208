@@ -7,7 +7,7 @@ if __name__ == '__main__':
 #vérification du nombre d'arguments
     if len(sys.argv) < 5 :
         print("Erreur : Nombre d'arguments insuffisant")
-        print("Utilisation : python db_moy.py nom_fichier.txt NOM Prenom note x2")
+        print("Utilisation : python (1.2)db_moy.py nom_fichier.txt NOM Prenom note x2")
         sys.exit(1)
     fichier = sys.argv(1)
     f_path =
