@@ -17,7 +17,7 @@ class Voitures():
 # Après la redéfinition…
 Valeurs des attributs de l’instance : Renault Clio 2020
 """
-car0 = Voitures()
+
 #main
 car = Voitures("Renault", "Clio", 2018) # Création d’une instance.
 caisse = car.modele # Lecture d’un attribut d’instance.
