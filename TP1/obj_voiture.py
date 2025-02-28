@@ -14,5 +14,5 @@ class Voitures():
 
     def __str__(self):
         # Redéfinition pour le print(instance)...
-        return f"Voiture : {self.marque} {self.modele} - {self.annee} - {self.couleur} - {self.conso} L/100km - {self.prix}€"
+        return f"Voiture : {self.marque} {self.modele} - {self.annee} - {self.couleur} - {self.conso}L/100km - {self.prix}€"
 
