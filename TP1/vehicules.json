@@ -1,0 +1,22 @@
+[
+    {
+        "marque": "Renault",
+        "annee": 2021,
+        "modele": "Captur_TCE_90ch",
+        "couleur": "Gris foncé",
+        "conso": 7.2,
+        "prix": 20000,
+        "_id_serie": "A123 B456 C789",
+        "_Voitures__audio_code": "MDAwMA=="
+    },
+    {
+        "marque": "Renault",
+        "annee": 2020,
+        "modele": "Clio_TCE_100ch",
+        "couleur": "Bleu nuit",
+        "conso": 5.5,
+        "prix": 17000,
+        "_id_serie": "A111 B222 C333",
+        "_Voitures__audio_code": "MTIzNA=="
+    }
+]
