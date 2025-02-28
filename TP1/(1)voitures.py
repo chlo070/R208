@@ -5,6 +5,9 @@ class Voitures():
         self.marque = marque
         self.annee = annee
         self.modele = modele
+    def __str__(self):
+    # Redéfinition pour le print(instance)...
+    return f"Valeurs des attributs de l’instance : {self.marque} {self.modele} {self.annee}"
 
 
 car = Voitures("Renault", "Clio", 2018) # Création d’une instance.
