@@ -21,14 +21,15 @@ if __name__ == "__main__":
     marie = Membre("CURIE", "Marie", "07/11/1867")
     print(albert)
     print(marie)
-    # Ajout de méthode
+    #  Ajout d'une méthode
     follett = Auteur("FOLLETT", "Ken", "Pays de Galles", "05/06/1949")
-    # livres avec l'instance de leur auteur
+    # Livres avec l'instance de leur auteur
     livre_1 = Livre("Les Piliers de la Terre", follett, "9782130428114", "1989")
     livre_2 = Livre("Une Colonne de Feu", follett, "9782221157695", "2017")
-    #   Test ajout des emprunts "à la main"
+    # Test ajout des emprunts "à la main"
     albert.livres_empruntes.append(livre_1)
     albert.livres_empruntes.append(livre_2)
     print("\n*** 1er affichage des livres empruntés...")
     albert.lister_emprunts()
     marie.lister_emprunts()
+    "/// Marie CURIE n'a aucun livre emprunté." if None else
