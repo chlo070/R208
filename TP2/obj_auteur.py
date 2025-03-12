@@ -17,14 +17,14 @@ class Auteur(Couleur):
     def __str__(self):  # Redéfinition pour le print(instance)...
         return f"{Auteur.BLEU}{self.id} {Auteur.NO_COLOR} {self.nom} {self.prenom} {Auteur.MAGENTA}(né(e) le {self.date_naissance} en {self.pays}) {Auteur.NO_COLOR}"
 
-
-print("Création de 3 instances de Auteur et affichage...")
-follett = Auteur("FOLLETT", "Ken", "Pays de Galles", "05/06/1949")
-verne = Auteur("VERNE","Jules","France", "08/02/1828")
-bridou = Auteur("BRIDOU", "Justin", None, None)
-print(follett)
-print(verne)
-print(bridou)
-print(bridou.pays)
-print(bridou.date_naissance)
+if __name__ == "__main__":
+    print("Création de 3 instances de Auteur et affichage...")
+    follett = Auteur("FOLLETT", "Ken", "Pays de Galles", "05/06/1949")
+    verne = Auteur("VERNE", "Jules", "France", "08/02/1828")
+    bridou = Auteur("BRIDOU", "Justin", None, None)
+    print(follett)
+    print(verne)
+    print(bridou)
+    print(bridou.pays)
+    print(bridou.date_naissance)
 
