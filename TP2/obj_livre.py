@@ -13,10 +13,9 @@ class Livre(Couleur):
         self.annee_publication = annee_publication if annee_publication else "inconnue"
         self.disponible = True
     def __str__(self):  # Redéfinition pour le print(instance)...
-        if self.disponible == True:
-            return f"{Auteur.BLEU}{self.id} {Auteur.NO_COLOR} {self.titre} de {self.auteur.nom} {self.auteur.prenom} {Auteur.MAGENTA}(ISBN: {self.isbn}, publié en {self.annee_publication}) {Auteur.NO_COLOR} - {Auteur.VERT}Dispo"
-        else :
-            return f"{Auteur.BLEU}{self.id} {Auteur.NO_COLOR} {self.titre} de {self.auteur.nom} {self.auteur.prenom} {Auteur.MAGENTA}(ISBN: {self.isbn}, publié en {self.annee_publication}) {Auteur.NO_COLOR} - {Auteur.ROUGE}NON Dispo"
+        return (f"{Livre.BLEU}{self.id}.\t: {Livre.NO_COLOR}'{self.titre}' de {self.auteur.prenom} {self.auteur.nom} {Livre.MAGENTA}(ISBN: {self.isbn}, publié en {self.annee_publication}){Livre.NO_COLOR} - {Livre.VERT if self.disponible else Livre.ROUGE}{ 'DISPO' if self.disponible else 'NON DISPO'}{Livre.NO_COLOR}")
+        #else :
+        #    return f"{Livre.BLEU}{self.id}.\t: {Livre.NO_COLOR} {self.titre} de {self.auteur.nom} {self.auteur.prenom} {Livre.MAGENTA}(ISBN: {self.isbn}, publié en {self.annee_publication}) {Livre.NO_COLOR} - {Livre.ROUGE}NON Dispo"
 
 
 if __name__ == "__main__":
