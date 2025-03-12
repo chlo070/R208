@@ -13,7 +13,7 @@ class Membre(Couleur):
         self.date_naissance = date_naissance
         self.livres_empruntes = []
     def __str__(self):  # Redéfinition pour le print(instance)...
-        return (f"{Membre.BLEU}{self.id}.\t :{Membre.NO_COLOR}{self.prenom} {self.nom} {Membre.MAGENTA}(né(e) le {self.date_naissance}){Livre.NO_COLOR} - {Livre.VERT if self.disponible else Livre.ROUGE}{ 'DISPO' if self.disponible else 'NON DISPO'}{Livre.NO_COLOR}")
+        return (f"{Membre.BLEU}{self.id}.\t :{Membre.NO_COLOR}{self.prenom} {self.nom} {Membre.MAGENTA}(né(e) le {self.date_naissance})")
 
 if __name__ == "__main__":
     print("Création de 2 instances de Membre et affichage...")

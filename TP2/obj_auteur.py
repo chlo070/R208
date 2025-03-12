@@ -1,6 +1,6 @@
 from obj_couleur import Couleur
 
-class Auteur(Couleur):
+class Auteur(Couleur):      # Hérite des éléments de la classe Couleur
     nombre_total_auteurs = 0    # Création d’une instance.
     def __init__(self, nom, prenom, pays = None, date_naissance = None):   # Constructeur et ses 4 arguments
         Auteur.nombre_total_auteurs += 1    # Incrémentation de l'instance de classe
