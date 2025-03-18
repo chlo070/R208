@@ -46,7 +46,7 @@ class Oiseau(Animal) :
     def se_presenter(self):
         print(f"Je suis un oiseau de type {self.ordre} et mon envergure est de {self.envergure} cm.")
         super().se_presenter()
-
+"""
 # 3e Test
 animaux = [ Mammifere("Simba", 5, "lion", "poils courts", "fauve clair"), 
 Mammifere("Beethoven", 3, "chien", "poils longs", "blanche & fauve"), 
@@ -59,3 +59,18 @@ Oiseau("Zazu", 40, "passereau", 40)]
 
 for animal in animaux:
     animal.se_presenter()
+"""
+
+#   Activité complémentaire
+class Personnage :
+    def __init__(self, titre, style ="film") :
+        self.style = style
+        self.titre = titre
+    def se_presenter(self):
+        print(f"Je joue dans le {style} : {titre}.")
+
+class ActeurMammifere(Mammifere, Personnage) :
+    super().__init__()
+    print(ActeurMammifere.__mro__)  # connaitre le MRO
+class ActeurOiseau(Oiseau, Personnage)
+    super().__init__()
