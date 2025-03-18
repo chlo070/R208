@@ -1,4 +1,4 @@
-#class
+#classe
 class Voitures():
     # Constructeur avec 3 arguments...
     def __init__(self, marque="Ferrari", modele="SF90_spider", annee=2010) :
